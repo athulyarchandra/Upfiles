@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upfiles</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="flex h-screen bg-gray-100">
+
+        <!-- Mobile menu toggle button -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+        <!-- Sidebar -->
+        <div style="width: 242px; height: 1089px;padding-top: 20px;padding-bottom: 16px; background-image: linear-gradient(#4A24E3,#4312EC); overflow: hidden; z-index: 1;"
+            class="hidden peer-checked:flex justify-between md:flex flex-col transition-all duration-300 ease-in-out">
+            <div style="width: 242px;height: 522px; gap: 24px;">
+                <div style="width: 124px; height: 62px; padding: 10px; gap: 10px;"
+                    class="flex items-center justify-between h-16px-4">
+                    <span
+                        style="width: 104px;height: 42px;font-weight: 800;font-size: 32px;line-height: 42px; color: #ffffff;"
+                        class="flex items-center justify-center text-center">Upfiles</span>
+                    <label for="menu-toggle" class="text-white cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:hidden" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </label>
+                    <!-- <span class="text-white font-bold uppercase">Sidebar</span> -->
+                </div>
+                <div style="overflow: hidden;" class="flex flex-col flex-1 overflow-y-auto">
+                    <nav class="flex-1 px-2 py-4">
+                        <div style="width: 242px;height: 262px;">
+                            <div style="width: 242px;height: 38px;padding-top: 10px;padding-bottom: 10px; padding-left: 30px;gap: 8px; overflow: hidden;"
+                                class="text-white">
+                                <h6
+                                    style="width: 212px;height: 18px;font-family: Sans;font-weight: 400;size: 12px;line-height: 18px;">
+                                    MAIN MENU</h6>
+                            </div>
+                            <!-- dashboard -->
+                            <a style="width: 242px;height: 56px;padding-top: 16px;padding-bottom: 16px; padding-left: 30px;gap: 8px;color: #ffffff;"
+                                href="#" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700 group">
+                                <img width="24px" height="24px" src="../src//assets/ic_dashboard.png" alt="">
+                                <h1 style="width: 180px;height: 24px;font-weight: 400;size: 16px;line-height: 24px;"
+                                    class="ps-10">Dashboard</h1>
+                            </a>
+                            <!-- tasks -->
+                            <a style="width: 242px;height: 56px;padding-top: 16px;padding-bottom: 16px; padding-left: 30px;gap: 8px;color: #ffffff;"
+                                href="#" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700 group">
+                                <img width="24px" height="24px" src="../src//assets/ic_calendar.png" alt="">
+                                <h1 style="width: 180px;height: 24px;font-weight: 400;size: 16px;line-height: 24px;"
+                                    class="ps-10">Tasks</h1>
+                            </a>
+
+                            <!-- friends -->
+                            <a style="width: 242px;height: 56px;padding-top: 16px;padding-bottom: 16px; padding-left: 30px;gap: 8px;color: #ffffff;"
+                                href="#" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700 group">
+                                <img width="24px" height="24px" src="../src//assets/ic_employee.png" alt="">
+                                <h1 style="width: 180px;height: 24px;font-weight: 400;size: 16px;line-height: 24px;"
+                                    class="ps-10">Friends</h1>
+                            </a>
+
+                            <!-- files -->
+                            <a style="width: 242px;height: 56px;padding-top: 16px;padding-bottom: 16px; padding-left: 30px;gap: 8px;color: #ffffff;"
+                                href="#" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700 group">
+                                <img width="24px" height="24px" src="../src//assets/ic_department.png" alt="">
+                                <h1 style="width: 180px;height: 24px;font-weight: 400;size: 16px;line-height: 24px;"
+                                    class="ps-10">Dashboard</h1>
+                            </a>
+                        </div>
+                        <div class="flex flex-col flex-1 overflow-y-auto">
+                            <nav class="flex-1 px-2 py-4">
+                                <div style="width: 242px;height: 150px;">
+                                    <div style="width: 242px;height: 38px;padding-top: 10px;padding-bottom: 10px; padding-left: 30px;gap: 8px; "
+                                        class="text-white">
+                                        <h6
+                                            style="width: 212px;height: 18px;font-family: Sans;font-weight: 500;size: 12px;line-height: 18px;">
+                                            OTHER</h6>
+                                    </div>
+                                    <!-- support -->
+                                    <a style="width: 242px;height: 56px;padding-top: 16px;padding-bottom: 16px; padding-left: 30px;gap: 8px;color: #ffffff;"
+                                        href="#"
+                                        class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700 group">
+                                        <img width="24px" height="24px" src="../src//assets/ic_support.png" alt="">
+                                        <h1 style="width: 180px;height: 24px;font-weight: 400;size: 16px;line-height: 24px;"
+                                            class="ps-10">Dashboard</h1>
+                                    </a>
+                                    <!-- settings -->
+                                    <a style="width: 242px;height: 56px;padding-top: 16px;padding-bottom: 16px; padding-left: 30px;gap: 8px;color: #ffffff;"
+                                        href="#"
+                                        class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700 group">
+                                        <img width="24px" height="24px" src="../src//assets/ic_settings.png" alt="">
+                                        <h1 style="width: 180px;height: 24px;font-weight: 400;size: 16px;line-height: 24px;"
+                                            class="ps-10">Tasks</h1>
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+            <div style="width: 212px;height: 218px;" class="border border-white ">
+                <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <img src="../src//assets/ic_dashboard.png" alt="">
+                </div>
+                <!-- Text Section -->
+                <div
+                    style="width: 212px; height: 190px;top: 883px;left: 15px;border-radius: 24px; background-image: linear-gradient(#868CFF,#4318FF);">
+                    <h3 class="text-lg font-bold mb-2">Upgrade to PRO</h3>
+                    <p class="text-sm text-gray-200 mb-4">
+                        to get access to all features! <br /> Connect with Venus World!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="flex flex-col flex-1 overflow-y-auto">
+            <div class="flex items-center justify-between h-16 bg-white border-b border-gray-200">
+                <div class="flex items-center px-4">
+                    <label for="menu-toggle"
+                        class="md:hidden mr-4 bg-gray-800 text-white p-2 rounded focus:outline-none cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none"
+                            viewBox="0 0 24 24" stroke="white">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </label>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                    <input class="mx-4 w-full border rounded-md px-4 py-2" type="text" placeholder="Search">
+                </div>
+                <div class="flex items-center pr-4">
+                    <button
+                        class="flex items-center text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 19l-7-7 7-7m5 14l7-7-7-7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="p-4">
+                <div style="width: 1143px;height: 969px;top: 90px;left: 274px;gap: 20px;">
+                    <p
+                        style="width: 269px;height: 24px;font-weight: 500;font-size: 14px;line-height: 24px;color: #707EAE;">
+                        Pages / NFT Marketplace</p>
+                    <p style="width: 269px;height: 42px;font-weight: 500;font-size: 34px;line-height: 42px;color: #2B3674; letter-spacing: -2%;"
+                        class="text-xl">Cloud Upload</p>
+                    <div style="width: 1,054px;height: 97px;gap: 20px;" class="flex justify-center items-center">
+                        <div style="width: 248px;height: 97px;border-radius: 20px; color: #ffffff;"
+                            class="flex items-center">
+                            <div style="width: 56px;height: 56px;top: 20px;left: 17px; color: #F4F7FE;justify-content: center; align-items: center;"
+                                class="shadow rounded-full flex justify-center items-center ">
+                                <img width="32.84px" height="32.84px" style="top: 31.72px; left: 28.53px;"
+                                    src="../src/assets/barEarnigs.png" alt="">
+                            </div>
+                            <div style="width: 144px;height: 54px;top: 20px;left: 91.21px;">
+                                <label
+                                    style="width:117px;height: 22.58px;top: 20px;left: 91.21px;font-weight: 500;font-size: 14px;line-height: 24px;letter-spacing: -2%;color:#A3AED0 ;">Earnings</label>
+                                <div
+                                    style="width: 144px;height: 54px;top: 20px;left: 91.21px;font-weight: 700;font-size: 24px;line-height: 32px;letter-spacing: -2%;color:#2B3674 ;">
+                                    $350.4
+                                </div>
+                            </div>
+                        </div>
+                        <div style="width: 248px;height: 97px;border-radius: 20px;color: #ffffff;">
+                            <div style="width: 144px;height: 47px;top: 17px;left: 23px;">
+                                <label
+                                    style="width:117px;height: 13px;top: 17px;left: 23px;font-weight: 500;font-size: 14px;line-height: 24px;letter-spacing: -2%;color:#A3AED0 ;">Sales</label>
+                                <div
+                                    style="width: 144px;height: 31px;top: 33px;left: 23px;font-weight: 700;font-size: 24px;line-height: 32px;letter-spacing: -2%;color:#2B3674 ;">
+                                    $574.34</div>
+                            </div>
+                            <div style="width: 123px;height: 14px; top: 67px;left: 23px;" class="flex">
+                                <p
+                                    style="width: 31px;height: 14px;top: 67px;left: 23px;font-weight: 700;font-size: 12px;line-height: 20px;letter-spacing: -2%;color: #05CD99;">
+                                    +23%</p>
+                                <p
+                                    style="width: 88px;height: 14px;top: 67px;left: 58px;font-weight: 400;font-size: 12px;line-height: 20px;letter-spacing: -2%;color: #A3AED0;">
+                                    since last month</p>
+
+                            </div>
+                        </div>
+                        <div style="width: 249px;height: 97px;border-radius: 20px;color: #ffffff;"
+                            class="flex justify-between">
+                            <div style="width: 56px;height: 56px; top: 20px;left: 17px;background-image: linear-gradient(#4481EB,#04BEFE);justify-content: center; align-items: center;"
+                                class="rounded-full flex justify-around items-center">
+                                <img width="28px" height="28px" style="top: 34px; left: 31px;"
+                                    src="../src/assets/tickmark.png" alt="">
+                            </div>
+                            <div style="width: 144px;height: 47.58px;top: 24px;left: 91px;">
+                                <label
+                                    style="width:117px;height: 22.58px;top: 24px;left: 91.21px;font-weight: 700;font-size: 16px;line-height: 28px;letter-spacing: -2%;color:#A3AED0 ;">Uploaded
+                                    Files</label>
+                                <div
+                                    style="width: 144px;height: 31px;top: 33px;left: 23px;font-weight: 700;font-size: 24px;line-height: 32px;letter-spacing: -2%;color:#2B3674 ;">
+                                    154</div>
+                            </div>
+                        </div>
+                        <div style="width: 249px;height: 97px;border-radius: 20px;color: #ffffff;"
+                            class="flex justify-between">
+                            <div style="width: 56px;height: 56px; top: 20px;left: 17px;background-image: linear-gradient(#4481EB,#04BEFE) ;justify-content: center; align-items: center;"
+                                class="rounded-full flex justify-center items-center">
+                                <img width="28px" height="28px" src="../src/assets/files.png" alt="">
+                            </div>
+                            <div style="width: 144px;height: 47.58px;top: 24px;left: 91px;">
+                                <label
+                                    style="width:117px;height: 22.58px;top: 24px;left: 91.21px;font-weight: 700;font-size: 16px;line-height: 28px;letter-spacing: -2%;color:#A3AED0 ;">Total
+                                    Files</label>
+                                <div
+                                    style="width: 144px;height: 31px;top: 33px;left: 23px;font-weight: 700;font-size: 24px;line-height: 32px;letter-spacing: -2%;color:#2B3674 ;">
+                                    2935</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!DOCTYPE html>
+                    <html lang="en">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>MyCompany - Responsive Hero Section</title>
+                        <script src="https://cdn.tailwindcss.com"></script>
+                        <style>
+                            /* ... (previous styles remain unchanged) ... */
+                        </style>
+                    </head>
+
+                    <body class="font-sans">
+                        <!-- ... (previous header code remains unchanged) ... -->
+
+                        <main class="pt-16 bg-gray-100">
+                            <!-- Hero Section -->
+                            <section class="container mx-auto px-4 py-12 md:py-24">
+                                <div class="flex flex-col md:flex-row items-center justify-evenly ">
+                                    <!-- Left Side: Company Info -->
+                                    <div class="w-full md:w-1/2 mb-8 md:mb-0 p-2"
+                                        style="background-image: url(../src/assets/Background\ Image.png); background-repeat:no-repeat;">
+                                        <h1 style="width: 377px;height: 84px;top: 25px;left: 42px;font-weight: 700;font-size: 34px;line-height: 42px;letter-spacing: -2%;color: #ffffff;"
+                                            class="">Upload your files and Run it Up.</h1>
+                                        <p style="width: 332px;height: 51px;top: 123px;left: 42px;font-weight: 500;font-size: 16px;line-height: 28px;letter-spacing: -2%;color: #E3DAFF;"
+                                            class="">Enter in this creative world. Discover now the latest NFTs or start
+                                            creating your own!</p>
+                                        <div style="justify-content: center;align-items: center;color: #D5D5D5;"
+                                            class="flex flex-col border-dashed border m-5 p-9">
+                                            <img style="color: #D5D5D5;" src="../src/assets/files.png" alt="">
+                                            <p>Click or drag file to this area to upload</p>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Right Side: Details and Buttons -->
+                                    <div class="w-full md:w-1/2">
+                                        <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-sm">
+                                            <!-- Month and Year Selector -->
+                                            <div class="flex justify-between items-center mb-4">
+                                              <div class="flex items-center space-x-2">
+                                                <button class="text-gray-500 hover:text-blue-600">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                                                  </svg>
+                                                </button>
+                                                <span class="font-semibold text-lg">April</span>
+                                                <button class="text-gray-500 hover:text-blue-600">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                                  </svg>
+                                                </button>
+                                              </div>
+                                              <span class="font-semibold text-lg">2021</span>
+                                            </div>
+                                          
+                                            <!-- Days of the Week -->
+                                            <div class="grid grid-cols-7 text-center text-gray-500 mb-3">
+                                              <div>Mo</div>
+                                              <div>Tu</div>
+                                              <div>We</div>
+                                              <div>Th</div>
+                                              <div>Fr</div>
+                                              <div>Sa</div>
+                                              <div>Su</div>
+                                            </div>
+                                          
+                                            <!-- Calendar Dates -->
+                                            <div class="grid grid-cols-7 text-center">
+                                              <!-- Previous month's days -->
+                                              <div class="text-gray-300">29</div>
+                                              <div class="text-gray-300">30</div>
+                                              <div>31</div>
+                                          
+                                              <!-- Current month -->
+                                              <div class="font-semibold text-gray-800">1</div>
+                                              <div>2</div>
+                                              <div>3</div>
+                                              <div>4</div>
+                                              <div>5</div>
+                                              <div>6</div>
+                                              <div>7</div>
+                                              <div>8</div>
+                                              <div>9</div>
+                                              <div>10</div>
+                                              <div>11</div>
+                                              <div>12</div>
+                                              <div>13</div>
+                                              <div>14</div>
+                                              <div>15</div>
+                                              <div>16</div>
+                                              <div>17</div>
+                                              <div>18</div>
+                                              <div>19</div>
+                                              <div>20</div>
+                                              <div>21</div>
+                                              <div>22</div>
+                                              <div>23</div>
+                                              <div>24</div>
+                                              <div>25</div>
+                                          
+                                              <!-- Highlighted days -->
+                                              <div class="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center mx-auto">27</div>
+                                              <div class="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center mx-auto">28</div>
+                                              <div class="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center mx-auto">29</div>
+                                              <div class="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center mx-auto">30</div>
+                                          
+                                              <!-- Next month's days -->
+                                              <div class="text-gray-300">1</div>
+                                              <div class="text-gray-300">2</div>
+                                              <div class="text-gray-300">3</div>
+                                              <div class="text-gray-300">4</div>
+                                              <div class="text-gray-300">5</div>
+                                              <div class="text-gray-300">6</div>
+                                              <div class="text-gray-300">7</div>
+                                            </div>
+                                          </div>
+                                          
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- ... (rest of your main content) ... -->
+                        </main>
+                        <div style="width: 1143px; height: 365px;border-radius: 20px;border: 1px;color: #ffffff;"
+                            class="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-white shadow-xl rounded-lg text-gray-900">
+                            <div class="rounded-t-lg h-32 overflow-hidden">
+                                <img class="object-cover object-top w-full"
+                                    src='../src//assets/bg2profile.png'
+                                    alt='bg'>
+                            </div>
+                            <div
+                                class="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
+                                <img class="object-cover object-center h-32"
+                                    src='../src/assets/profile.png'
+                                    alt='Woman looking front'>
+                            </div>
+                            <div style="align-items: center;" class="text-center mt-2">
+                                <h2 style="width: 132px;height: 32px;top: 205px; color: #2B3674; align-items: center;"class="flex items-center text-center">Adela Parkson</h2>
+                                <p class="text-gray-500">Level 3 Contributor</p>
+                            </div>
+                            <ul style="width: 249px;height: 48px;top: 282px;left: 449px;" class="py-4 mt-2 text-gray-700 flex items-center justify-evenly">
+                                <li style="width: 28px;height: 48px;top: 282px;left: 449px;" class="flex flex-col items-center justify-around">
+                                    <div style="width: 21px;height: 24px;top: 282px;left: 453px;font-weight: 700px;font-size: 24px;line-height: 24px;letter-spacing: -2%; align-items: center;color: #2B3674;">17</div>
+                                    <div style="width: 28px;height: 20px;top: 310px;left: 449px;font-weight: 400px;font-size: 14px;line-height: 20px;letter-spacing: -2%; align-items: center;color: #A3AED0;">Files</div>
+
+                                </li>
+                                <li style="width: 28px;height: 48px;top: 282px;left: 449px;" class="flex flex-col items-center justify-around">
+                                    <div style="width: 21px;height: 24px;top: 282px;left: 453px;font-weight: 700px;font-size: 24px;line-height: 24px;letter-spacing: -2%; align-items: center;color: #2B3674;">17</div>
+                                    <div style="width: 28px;height: 20px;top: 310px;left: 449px;font-weight: 400px;font-size: 14px;line-height: 20px;letter-spacing: -2%; align-items: center;color: #A3AED0;">Files</div>
+
+                                </li>
+                                <li style="width: 28px;height: 48px;top: 282px;left: 449px;" class="flex flex-col items-center justify-around">
+                                    <div style="width: 21px;height: 24px;top: 282px;left: 453px;font-weight: 700px;font-size: 24px;line-height: 24px;letter-spacing: -2%; align-items: center;color: #2B3674;">17</div>
+                                    <div style="width: 28px;height: 20px;top: 310px;left: 449px;font-weight: 400px;font-size: 14px;line-height: 20px;letter-spacing: -2%; align-items: center;color: #A3AED0;">Files</div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </body>
+
+                    </html>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+  
+</body>
+
+</html>
